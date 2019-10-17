@@ -4,7 +4,7 @@
 #
 Name     : perl-accessors
 Version  : 1.01
-Release  : 4
+Release  : 5
 URL      : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Summary  : create accessor methods in caller's package.
@@ -36,7 +36,7 @@ dev components for the perl-accessors package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -46,7 +46,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
