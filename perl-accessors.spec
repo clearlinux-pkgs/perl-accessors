@@ -4,12 +4,13 @@
 #
 Name     : perl-accessors
 Version  : 1.01
-Release  : 5
+Release  : 6
 URL      : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Summary  : create accessor methods in caller's package.
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-accessors-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -29,8 +30,18 @@ Requires: perl-accessors = %{version}-%{release}
 dev components for the perl-accessors package.
 
 
+%package perl
+Summary: perl components for the perl-accessors package.
+Group: Default
+Requires: perl-accessors = %{version}-%{release}
+
+%description perl
+perl components for the perl-accessors package.
+
+
 %prep
 %setup -q -n accessors-1.01
+cd %{_builddir}/accessors-1.01
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -66,11 +77,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/accessors.pm
-/usr/lib/perl5/vendor_perl/5.28.2/accessors/chained.pm
-/usr/lib/perl5/vendor_perl/5.28.2/accessors/classic.pm
-/usr/lib/perl5/vendor_perl/5.28.2/accessors/ro.pm
-/usr/lib/perl5/vendor_perl/5.28.2/accessors/rw.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -79,3 +85,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/accessors::classic.3
 /usr/share/man/man3/accessors::ro.3
 /usr/share/man/man3/accessors::rw.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/accessors.pm
+/usr/lib/perl5/vendor_perl/5.30.1/accessors/chained.pm
+/usr/lib/perl5/vendor_perl/5.30.1/accessors/classic.pm
+/usr/lib/perl5/vendor_perl/5.30.1/accessors/ro.pm
+/usr/lib/perl5/vendor_perl/5.30.1/accessors/rw.pm
