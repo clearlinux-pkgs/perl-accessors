@@ -4,7 +4,7 @@
 #
 Name     : perl-accessors
 Version  : 1.01
-Release  : 6
+Release  : 7
 URL      : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Summary  : create accessor methods in caller's package.
@@ -88,8 +88,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/accessors.pm
-/usr/lib/perl5/vendor_perl/5.30.1/accessors/chained.pm
-/usr/lib/perl5/vendor_perl/5.30.1/accessors/classic.pm
-/usr/lib/perl5/vendor_perl/5.30.1/accessors/ro.pm
-/usr/lib/perl5/vendor_perl/5.30.1/accessors/rw.pm
+/usr/lib/perl5/vendor_perl/5.30.2/accessors.pm
+/usr/lib/perl5/vendor_perl/5.30.2/accessors/chained.pm
+/usr/lib/perl5/vendor_perl/5.30.2/accessors/classic.pm
+/usr/lib/perl5/vendor_perl/5.30.2/accessors/ro.pm
+/usr/lib/perl5/vendor_perl/5.30.2/accessors/rw.pm
