@@ -88,8 +88,8 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/accessors.pm
-/usr/lib/perl5/vendor_perl/5.32.1/accessors/chained.pm
-/usr/lib/perl5/vendor_perl/5.32.1/accessors/classic.pm
-/usr/lib/perl5/vendor_perl/5.32.1/accessors/ro.pm
-/usr/lib/perl5/vendor_perl/5.32.1/accessors/rw.pm
+/usr/lib/perl5/vendor_perl/5.34.0/accessors.pm
+/usr/lib/perl5/vendor_perl/5.34.0/accessors/chained.pm
+/usr/lib/perl5/vendor_perl/5.34.0/accessors/classic.pm
+/usr/lib/perl5/vendor_perl/5.34.0/accessors/ro.pm
+/usr/lib/perl5/vendor_perl/5.34.0/accessors/rw.pm
