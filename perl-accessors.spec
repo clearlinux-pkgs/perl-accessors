@@ -4,7 +4,7 @@
 #
 Name     : perl-accessors
 Version  : 1.01
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SP/SPURKIS/accessors-1.01.tar.gz
 Summary  : create accessor methods in caller's package.
